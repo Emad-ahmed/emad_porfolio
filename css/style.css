@@ -889,6 +889,7 @@ img {
     /*font-size: 0.9375em;*/
     line-height: 1.625em;
     padding: 15px 0;
+    font-size: 2rem;
 }
 
 .about-us .about-us-list {
@@ -2080,4 +2081,18 @@ img.img.img-circle.lt-box {
     float: left;
     width: 60px;
     height: auto;
+}
+
+.wow
+{
+    font-size: 2.5rem;
+    
+}
+
+
+.downloadcv
+{
+    background: #CE1139;
+    color: white;
+    margin-top: 2rem;
 }
