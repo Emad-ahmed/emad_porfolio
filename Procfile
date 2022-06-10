@@ -1,1 +1,1 @@
-web:web: gunicorn emadsite.wsgi
+web: gunicorn emadsite.wsgi
