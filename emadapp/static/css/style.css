@@ -1938,6 +1938,10 @@ div.mc-image {
         width: auto;
         text-align: center;
     }
+    .detailsmyself
+    {
+        text-align: center;
+    }
     .aboutUs-container {
         background-image: none;
     }
@@ -2054,6 +2058,10 @@ div.mc-image {
         float: left;
         width: 100%;
         text-align: left;
+    }
+    .detailsmyself
+    {
+        text-align: center;
     }
     .navbar {
         border: 0px solid #fff;
