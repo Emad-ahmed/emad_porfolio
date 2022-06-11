@@ -1,913 +1,654 @@
+{% extends 'base.html' %} <br />
+
+{% block title %}Home{% endblock title %} <br />
+{% load news_load %} <br />
+{% block content %} <br />
 {% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1" />
-    <title>Emad</title>
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <link
-      href="{% static 'css/bootstrap.min.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="{% static 'css/card.css' %}" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="{% static 'js/fancybox/jquery.fancybox.css' %}"
-      type="text/css"
-      media="screen"
-    />
-    <link
-      href="{% static 'css/style.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="{% static 'css/font-awesome.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="{% static 'css/animate.css' %}"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!--[if lt IE 9]>
-      <script src="js/respond-1.1.0.min.js"></script>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/html5element.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <!--Hero_Section-->
-    <section id="hero_section" class="top_cont_outer">
-      <div class="hero_wrapper">
-        <div class="container">
-          <div class="hero_section">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="top_left_cont zoomIn wow animated">
-                  <h2>
-                    Hello, my name is Emad<br />
-                    <strong>I <i class="fa fa-heart"></i>Web Designing</strong>
-                  </h2>
-
-                  <div class="underline"></div>
-                  <a href="#aboutUs" class="read_more2">Who Am I</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Hero_Section-->
-
-    <!--Header_section-->
-    <header id="header_wrapper">
-      <div class="container">
-        <div class="header_box">
-          <div class="logo">
-            <a href="#" class="altitle"
-              >Emad <span class="title">Ahmed</span></a
-            >
-          </div>
-          <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-              <button
-                type="button"
-                id="nav-toggle"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#main-nav"
-              >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span> <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div id="main-nav" class="collapse navbar-collapse navStyle">
-              <ul class="nav navbar-nav" id="mainNav">
-                <li class="active">
-                  <a href="#hero_section" class="scroll-link">Home</a>
-                </li>
-                <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
-                <li><a href="#service" class="scroll-link">Skills</a></li>
-                <li><a href="#Portfolio" class="scroll-link">Projects</a></li>
-                <li><a href="#clients" class="scroll-link">Experience</a></li>
-                <li><a href="#team" class="scroll-link">Testimonial</a></li>
-                <li><a href="#blog" class="scroll-link">Blog</a></li>
-                <li><a href="#contact" class="scroll-link">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!--Header_section-->
-
-    <section id="aboutUs">
-      <!--Aboutus-->
-      <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
-        <div class="container">
-          <h2>Who Am I</h2>
-          <h6>A passionate Full Stack Web Developer from Bangladesh</h6>
-          <div class="inner_section">
-            <div class="row">
-              <div class="col-lg-12 about-us">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img class="img-responsive" src="img/about1.jpg" align="" />
-                  </div>
-                  <!-- /.col-md-6 -->
-                  <div class="col-md-6 detailsmyself m-auto">
-                    <h3>I Am A Web Developer</h3>
-                    <p>
-                      I,m Emad Ahmed. I am a student of leading university in
-                      CSE department. I have been involved in web for about 3
-                      years. I am basically a django developer.
-                    </p>
-
-                    <ul class="about-us-list">
-                      <a href="Emad Ahmed.pdf" class="btn downloadcv" download
-                        >Download CV</a
-                      >
-                    </ul>
-                    <!-- /.about-us-list -->
-                  </div>
-                  <!-- /.col-md-6 -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.col-lg-12 -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Aboutus-->
-
-    <!--Service-->
-    <section id="service">
-      <div class="container">
-        <h2>Skills</h2>
-        <h6>Here is the my skill</h6>
-        <div class="service_wrapper">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="service_icon delay-03s animated wow zoomIn">
-                <span><i class="fab fa-python"></i></span>
-              </div>
-              <div class="service_block">
-                <h3 class="animated fadeInUp wow">Python</h3>
-                <p class="animated fadeInDown wow">
-                  I have more than 3 years exprience in python. i create more
-                  than 30 project in python
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="service_icon icon3 delay-03s animated wow zoomIn">
-                <span><i class="fa fa-html5"></i></span>
-              </div>
-              <div class="service_block">
-                <h3 class="animated fadeInUp wow">Design</h3>
-                <p class="animated fadeInDown wow">
-                  I am a Professional website designer. I know html,css, modern
-                  css,talwind, modern js.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="service_icon icon3 delay-03s animated wow zoomIn">
-                <span><i class="fa fa-user"></i></span>
-              </div>
-              <div class="service_block">
-                <h3 class="animated fadeInUp wow">Development</h3>
-                <p class="animated fadeInDown wow">
-                  I use django as a backend developement. i am a full stack web
-                  developer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Service-->
-
-    <!-- Portfolio -->
-    <section id="Portfolio" class="content">
-      <!-- Container -->
-      <div class="container portfolio_title">
-        <!-- Title -->
-        <div class="section-title">
-          <h2>Projects</h2>
-          <h6>Here All My Projects</h6>
-        </div>
-        <!--/Title -->
-      </div>
-      <!-- Container -->
-
-      <div class="portfolio-top"></div>
-
-      <!-- Portfolio Filters -->
-      <div class="portfolio">
-        <div id="filters" class="sixteen columns">
-          <ul class="clearfix">
-            <li>
-              <a id="all" href="#" data-filter="*" class="active">
-                <h5>All</h5>
-              </a>
-            </li>
-            <li>
-              <a class="" href="#" data-filter=".python">
-                <h5>Python</h5>
-              </a>
-            </li>
-            <li>
-              <a class="" href="#" data-filter=".design">
-                <h5>Design</h5>
-              </a>
-            </li>
-            <li>
-              <a class="" href="#" data-filter=".android">
-                <h5>Android</h5>
-              </a>
-            </li>
-            <li>
-              <a class="" href="#" data-filter=".social">
-                <h5>Social</h5>
-              </a>
-            </li>
-            <li>
-              <a class="" href="#" data-filter=".web">
-                <h5>Web App</h5>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!--/Portfolio Filters -->
-
-        <!-- Portfolio Wrapper -->
-        <div
-          class="isotope fadeInLeft animated wow grid"
-          style="position: relative; overflow: hidden; height: 480px"
-          id="portfolio_wrapper"
-        >
-          <!-- Portfolio Item -->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four appleIOS isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic1.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic1.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item -->
-
-          <!-- Portfolio Item-->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four design isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic2.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic2.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item -->
-
-          <!-- Portfolio Item -->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four design isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic3.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic3.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item-->
-
-          <!-- Portfolio Item-->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four android prototype web isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic4.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic4.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!-- Portfolio Item -->
-
-          <!-- Portfolio Item -->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four design isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic5.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic5.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item -->
-
-          <!-- Portfolio Item -->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four web isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic6.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic6.jpgss' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item -->
-
-          <!-- Portfolio Item  -->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four design web isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic7.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic7.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item -->
-
-          <!-- Portfolio Item -->
-          <figure
-            style="
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1);
-              width: 337px;
-              opacity: 1;
-            "
-            class="portfolio-item one-four android isotope-item effect-oscar"
-          >
-            <div class="portfolio_img">
-              <img
-                src="{% static 'img/portfolio_pic8.jpg' %}"
-                alt="Portfolio 1"
-              />
-            </div>
-            <figcaption>
-              <div>
-                <a
-                  href="{% static 'img/portfolio_pic8.jpg' %}"
-                  class="fancybox"
-                >
-                  <h2>Warm <span>Oscar</span></h2>
-                  <p>
-                    Oscar is a decent man. He used to clean porches with
-                    pleasure.
-                  </p>
-                </a>
-              </div>
-            </figcaption>
-          </figure>
-          <!--/Portfolio Item -->
-        </div>
-        <!--/Portfolio Wrapper -->
-      </div>
-      <!--/Portfolio Filters -->
-
-      <div class="portfolio_btm"></div>
-
-      <div id="project_container">
-        <div class="clear"></div>
-        <div id="project_data"></div>
-      </div>
-    </section>
-    <!--/Portfolio -->
-
-    <section class="page_section" id="clients">
-      <!--page_section-->
-      <h2>Worked For</h2>
-      <!--page_section-->
-      <div class="client_logos">
-        <!--client_logos-->
-        <div class="container">
-          <ul class="fadeInRight animated wow">
-            <li>
-              <a href="javascript:void(0)" style="color: white">Rakidon</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)" style="color: white">Affifylab</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!--client_logos-->
-
-    <section class="page_section team" id="team">
-      <!--main-section team-start-->
-      <div class="container">
-        <h2>Testimonial</h2>
-        <h6>Here is What My Clients Saying About Us</h6>
-
-        <div id="team" name="team">
-          <div class="container">
-            <div class="row centered">
-              <div class="col-md-3 centered">
-                <img
-                  class="img img-circle lt-box"
-                  src="{% static 'img/team01.jpg' %}"
-                  height="120px"
-                  width="120px"
-                  alt=""
-                />
-                <div class="rt-box">
-                  <h4><strong>Sayem Ahmed</strong></h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
-                    quisci ipsum gravida tortor.
-                  </p>
-                  <br />
-                </div>
-              </div>
-              <div class="col-md-3 centered">
-                <img
-                  class="img img-circle lt-box"
-                  src="{% static 'img/team02.jpg' %}"
-                  height="120px"
-                  width="120px"
-                  alt=""
-                />
-                <div class="rt-box">
-                  <h4><strong>Nahid Ahmed</strong></h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
-                    quisci ipsum gravida tortor.
-                  </p>
-                  <br />
-                </div>
-              </div>
-              <div class="col-md-3 centered">
-                <img
-                  class="img img-circle lt-box"
-                  src="{% static 'img/team03.jpg' %}"
-                  height="120px"
-                  width="120px"
-                  alt=""
-                />
-                <div class="rt-box">
-                  <h4><strong>Javed Ahmed</strong></h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
-                    quisci ipsum gravida tortor.
-                  </p>
-                  <br />
-                </div>
-              </div>
-              <div class="col-md-3 centered">
-                <img
-                  class="img img-circle lt-box"
-                  src="{% static 'img/team04.jpg' %}"
-                  height="120px"
-                  width="120px"
-                  alt=""
-                />
-                <div class="rt-box">
-                  <h4><strong>Mnin Nulk</strong></h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
-                    quisci ipsum gravida tortor.
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-      </div>
-    </section>
-
-
+<!--Header_section-->
+{% if messages %} {% for message in messages %}
+<p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>
+  {{message}}
+</p>
+{% endfor %} {% endif %} {% csrf_token %} {% for fm in form %}
+<div class="form-group mb-3">
+  {{fm.label_tag}} {{fm}}
+  <small class="text-danger"> {{fm.errors|striptags}} </small>
+</div>
+{% endfor %}
+<section id="aboutUs">
+  <!--Aboutus-->
+  <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
     <div class="container">
-      <!-- Title -->
-      <div class="section-title">
-        <h2>Blog</h2>
-        <h6>Read My View</h6>
-      </div>
-      <!--/Title -->
-    </div>
-
-    <div class="blog" id="blog">
-      
-    <section class="wrapper">
-      <div class="container-fostrap">
-        <div class="content">
-          <div class="container">
+      <h2>Who Am I</h2>
+      <h6>A passionate Full Stack Web Developer from Bangladesh</h6>
+      <div class="inner_section">
+        <div class="row">
+          <div class="col-lg-12 about-us">
             <div class="row">
-              <div class="col-xs-12 col-sm-4">
-                <div class="card">
-                  <a
-                    class="img-card"
-                    href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"
-                  >
-                    <img
-                      src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg"
-                    />
-                  </a>
-                  <div class="card-content">
-                    <h4 class="card-title">
-                      <a
-                        href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"
-                      >
-                        Bootstrap 3 Carousel FadeIn Out Effect
-                      </a>
-                    </h4>
-                    <p class="">
-                      Tutorial to make a carousel bootstrap by adding more
-                      wonderful effect fadein ...
-                    </p>
-                  </div>
-                  <div class="card-read-more">
-                    <a
-                      href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"
-                      class="btn btn-link btn-block"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
+              <div class="col-md-6">
+                <img class="img-responsive" src="img/about1.jpg" align="" />
               </div>
-              <div class="col-xs-12 col-sm-4">
-                <div class="card">
-                  <a
-                    class="img-card"
-                    href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html"
+              <!-- /.col-md-6 -->
+              <div class="col-md-6 detailsmyself m-auto">
+                <h3>I Am A Web Developer</h3>
+                <p>
+                  I,m Emad Ahmed. I am a student of leading university in CSE
+                  department. I have been involved in web for about 3 years. I
+                  am basically a django developer.
+                </p>
+
+                <ul class="about-us-list">
+                  <a href="Emad Ahmed.pdf" class="btn downloadcv" download
+                    >Download CV</a
                   >
-                    <img
-                      src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s400/material%2Bnavbar.jpg"
-                    />
-                  </a>
-                  <div class="card-content">
-                    <h4 class="card-title">
-                      <a
-                        href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html"
-                      >
-                        Material Design Responsive Menu
-                      </a>
-                    </h4>
-                    <p class="">
-                      Material Design is a visual programming language made by
-                      Google. Language programming...
-                    </p>
-                  </div>
-                  <div class="card-read-more">
-                    <a
-                      href="https://codepen.io/wisnust10/full/ZWERZK/"
-                      class="btn btn-link btn-block"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
+                </ul>
+                <!-- /.about-us-list -->
               </div>
-              <div class="col-xs-12 col-sm-4">
-                <div class="card">
-                  <a
-                    class="img-card"
-                    href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html"
-                  >
-                    <img
-                      src="https://4.bp.blogspot.com/-TDIJ17DfCco/Vtneyc-0t4I/AAAAAAAABmk/aa4AjmCvRck/s1600/cover.jpg"
-                    />
-                  </a>
-                  <div class="card-content">
-                    <h4 class="card-title">
-                      <a
-                        href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html"
-                        >5 Button Hover Animation Effects
-                      </a>
-                    </h4>
-                    <p class="">
-                      tutorials button hover animation, although very much a
-                      hover button is very beauti...
-                    </p>
-                  </div>
-                  <div class="card-read-more">
-                    <a
-                      href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html"
-                      class="btn btn-link btn-block"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Aboutus-->
+
+<!--Service-->
+<section id="service">
+  <div class="container">
+    <h2>Skills</h2>
+    <h6>Here is the my skill</h6>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service_icon delay-03s animated wow zoomIn">
+            <span><i class="fab fa-python"></i></span>
+          </div>
+          <div class="service_block">
+            <h3 class="animated fadeInUp wow">Python</h3>
+            <p class="animated fadeInDown wow">
+              I have more than 3 years exprience in python. i create more than
+              30 project in python
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service_icon icon3 delay-03s animated wow zoomIn">
+            <span><i class="fa fa-html5"></i></span>
+          </div>
+          <div class="service_block">
+            <h3 class="animated fadeInUp wow">Design</h3>
+            <p class="animated fadeInDown wow">
+              I am a Professional website designer. I know html,css, modern
+              css,talwind, modern js.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service_icon icon3 delay-03s animated wow zoomIn">
+            <span><i class="fa fa-user"></i></span>
+          </div>
+          <div class="service_block">
+            <h3 class="animated fadeInUp wow">Development</h3>
+            <p class="animated fadeInDown wow">
+              I use django as a backend developement. i am a full stack web
+              developer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Service-->
+
+<!-- Portfolio -->
+<section id="Portfolio" class="content">
+  <!-- Container -->
+  <div class="container portfolio_title">
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Projects</h2>
+      <h6>Here All My Projects</h6>
+    </div>
+    <!--/Title -->
+  </div>
+  <!-- Container -->
+
+  <div class="portfolio-top"></div>
+
+  <!-- Portfolio Filters -->
+  <div class="portfolio">
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li>
+          <a id="all" href="#" data-filter="*" class="active">
+            <h5>All</h5>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#" data-filter=".python">
+            <h5>Python</h5>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#" data-filter=".design">
+            <h5>Design</h5>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#" data-filter=".android">
+            <h5>Android</h5>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#" data-filter=".social">
+            <h5>Social</h5>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#" data-filter=".web">
+            <h5>Web App</h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--/Portfolio Filters -->
+
+    <!-- Portfolio Wrapper -->
+    <div
+      class="isotope fadeInLeft animated wow grid"
+      style="position: relative; overflow: hidden; height: 480px"
+      id="portfolio_wrapper"
+    >
+      <!-- Portfolio Item -->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four appleIOS isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic1.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic1.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item-->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four design isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic2.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic2.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four design isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic3.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic3.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item-->
+
+      <!-- Portfolio Item-->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four android prototype web isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic4.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic4.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!-- Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four design isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic5.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic5.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four web isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic6.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic6.jpgss' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item  -->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four design web isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic7.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic7.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1);
+          width: 337px;
+          opacity: 1;
+        "
+        class="portfolio-item one-four android isotope-item effect-oscar"
+      >
+        <div class="portfolio_img">
+          <img src="{% static 'img/portfolio_pic8.jpg' %}" alt="Portfolio 1" />
+        </div>
+        <figcaption>
+          <div>
+            <a href="{% static 'img/portfolio_pic8.jpg' %}" class="fancybox">
+              <h2>Warm <span>Oscar</span></h2>
+              <p>
+                Oscar is a decent man. He used to clean porches with pleasure.
+              </p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+    </div>
+    <!--/Portfolio Wrapper -->
+  </div>
+  <!--/Portfolio Filters -->
+
+  <div class="portfolio_btm"></div>
+
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+</section>
+<!--/Portfolio -->
+
+<section class="page_section" id="clients">
+  <!--page_section-->
+  <h2>Worked For</h2>
+  <!--page_section-->
+  <div class="client_logos">
+    <!--client_logos-->
+    <div class="container">
+      <ul class="fadeInRight animated wow">
+        <li>
+          <a href="javascript:void(0)" style="color: white">Rakidon</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" style="color: white">Affifylab</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--client_logos-->
+
+<section class="page_section team" id="team">
+  <!--main-section team-start-->
+  <div class="container">
+    <h2>Testimonial</h2>
+    <h6>Here is What My Clients Saying About Us</h6>
+
+    <div id="team" name="team">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-3 centered">
+            <img
+              class="img img-circle lt-box"
+              src="{% static 'img/team01.jpg' %}"
+              height="120px"
+              width="120px"
+              alt=""
+            />
+            <div class="rt-box">
+              <h4><strong>Sayem Ahmed</strong></h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
+                quisci ipsum gravida tortor.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="col-md-3 centered">
+            <img
+              class="img img-circle lt-box"
+              src="{% static 'img/team02.jpg' %}"
+              height="120px"
+              width="120px"
+              alt=""
+            />
+            <div class="rt-box">
+              <h4><strong>Nahid Ahmed</strong></h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
+                quisci ipsum gravida tortor.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="col-md-3 centered">
+            <img
+              class="img img-circle lt-box"
+              src="{% static 'img/team03.jpg' %}"
+              height="120px"
+              width="120px"
+              alt=""
+            />
+            <div class="rt-box">
+              <h4><strong>Javed Ahmed</strong></h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
+                quisci ipsum gravida tortor.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="col-md-3 centered">
+            <img
+              class="img img-circle lt-box"
+              src="{% static 'img/team04.jpg' %}"
+              height="120px"
+              width="120px"
+              alt=""
+            />
+            <div class="rt-box">
+              <h4><strong>Mnin Nulk</strong></h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
+                quisci ipsum gravida tortor.
+              </p>
+              <br />
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <!-- row -->
+    </div>
+  </div>
+</section>
 
-    <!--/Team-->
-    <!--Footer-->
-    <footer class="footer_wrapper" id="contact">
-      <div class="container">
-        <section class="page_section contact" id="contact">
-          <div class="contact_section">
-            <h2>Get In Touch</h2>
-            <h6>You Can Contact me Anytime</h6>
-          </div>
+<div class="container">
+  <!-- Title -->
+  <div class="section-title">
+    <h2>Blog</h2>
+    <h6>Read My View</h6>
+  </div>
+  <!--/Title -->
+</div>
+
+<div class="blog" id="blog">
+  <section class="wrapper">
+    <div class="container-fostrap">
+      <div class="content">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-4 wow fadeInLeft">
-              <div class="contact_info">
-                <div class="detail">
-                  <h4>Address</h4>
-                  <p>Dhakadakshin, Golapgonj, Sylhet</p>
+            {% for b in blog %}
+            <div class="col-xs-12 col-sm-4">
+              <div class="card">
+                <a class="img-card" href="{% url 'blog' b.id %}">
+                  <img src="{{b.blog_imaGE.url}}" />
+                </a>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    <a href="{% url 'blog' b.id %}"> {{b.title}} </a>
+                  </h4>
+                  <p class="">{{b.description|cutword}}</p>
                 </div>
-                <div class="detail">
-                  <h4>call me</h4>
-                  <p>+01312241148</p>
-                </div>
-                <div class="detail text-white">
-                  <h4>Email me</h4>
+                <div class="card-read-more">
                   <a
-                    href="mailto:amadahmed1234678@gmail.com"
-                    style="color: white"
+                    href="{% url 'blog' b.id %}"
+                    class="btn btn-link btn-block"
                   >
-                    amadahmed1234678@gmail.com</a
-                  >
+                    Read More
+                  </a>
                 </div>
               </div>
-
-              <ul class="social_links">
-                <li class="twitter animated bounceIn wow delay-02s">
-                  <a href="https://www.linkedin.com/in/emad-ahmed-53055518a/"
-                    ><i class="fa fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="facebook animated bounceIn wow delay-03s">
-                  <a href="https://www.facebook.com/shuhan.ahmed.560"
-                    ><i class="fa fa-facebook"></i
-                  ></a>
-                </li>
-                <li class="pinterest animated bounceIn wow delay-04s">
-                  <a href="https://www.instagram.com/amad.ahmed.560/"
-                    ><i class="fa fa-instagram"></i
-                  ></a>
-                </li>
-                <li class="gplus animated bounceIn wow delay-05s">
-                  <a href="https://github.com/Emad-ahmed"
-                    ><i class="fa fa-github"></i
-                  ></a>
-                </li>
-              </ul>
             </div>
-            <div class="col-lg-8 wow fadeInLeft delay-06s">
-              <form action="" method="POST">
-                {% csrf_token %}
-                <div class="form">
-                  <input
-                    class="input-text"
-                    type="text"
-                    name="name"
-                    value="Your Name *"
-                    onFocus="if(this.value==this.defaultValue)this.value='';"
-                    onBlur="if(this.value=='')this.value=this.defaultValue;"
-                  />
-                  <input
-                    class="input-text"
-                    type="email"
-                    name="sender"
-                    value="Your E-mail *"
-                    onFocus="if(this.value==this.defaultValue)this.value='';"
-                    onBlur="if(this.value=='')this.value=this.defaultValue;"
-                  />
-                  <textarea
-                    class="input-text text-area"
-                    cols="0"
-                    rows="0"
-                    name="message"
-                    onFocus="if(this.value==this.defaultValue)this.value='';"
-                    onBlur="if(this.value=='')this.value=this.defaultValue;"
-                  >
-Your Message *</textarea
-                  >
-                  <input class="input-btn" type="submit" value="send message" />
-                </div>
-              </form>
-            </div>
+            {% endfor %}
           </div>
-        </section>
-      </div>
-      <div class="container">
-        <div class="footer_bottom">
-          <span
-            >Copyright © 2021, Template by
-            <a href="http://webthemez.com">Emad</a>.
-          </span>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script
-      type="text/javascript"
-      src="{% static 'js/jquery-1.11.0.min.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'js/bootstrap.min.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'js/jquery-scrolltofixed.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'js/jquery.nav.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'js/jquery.easing.1.3.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'js/jquery.isotope.js' %}"
-    ></script>
-    <script
-      src="{% static 'js/fancybox/jquery.fancybox.pack.js' %}"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript" src="{% static 'js/wow.jsss' %}"></script>
-    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
-  </body>
-</html>
+  <!--/Team-->
+  <!--Footer-->
+  <footer class="footer_wrapper" id="contact">
+    <div class="container">
+      <section class="page_section contact" id="contact">
+        <div class="contact_section">
+          <h2>Get In Touch</h2>
+          <h6>You Can Contact me Anytime</h6>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 wow fadeInLeft">
+            <div class="contact_info">
+              <div class="detail">
+                <h4>Address</h4>
+                <p>Dhakadakshin, Golapgonj, Sylhet</p>
+              </div>
+              <div class="detail">
+                <h4>call me</h4>
+                <p>+01312241148</p>
+              </div>
+              <div class="detail text-white">
+                <h4>Email me</h4>
+                <a
+                  href="mailto:amadahmed1234678@gmail.com"
+                  style="color: white"
+                >
+                  amadahmed1234678@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <ul class="social_links">
+              <li class="twitter animated bounceIn wow delay-02s">
+                <a href="https://www.linkedin.com/in/emad-ahmed-53055518a/"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="facebook animated bounceIn wow delay-03s">
+                <a href="https://www.facebook.com/shuhan.ahmed.560"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li class="pinterest animated bounceIn wow delay-04s">
+                <a href="https://www.instagram.com/amad.ahmed.560/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="gplus animated bounceIn wow delay-05s">
+                <a href="https://github.com/Emad-ahmed"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8 wow fadeInLeft delay-06s">
+            <form action="" method="POST">
+              {% csrf_token %}
+              <div class="form">
+                <input
+                  class="input-text"
+                  type="text"
+                  name="name"
+                  value="Your Name *"
+                  onFocus="if(this.value==this.defaultValue)this.value='';"
+                  onBlur="if(this.value=='')this.value=this.defaultValue;"
+                />
+                <input
+                  class="input-text"
+                  type="email"
+                  name="sender"
+                  value="Your E-mail *"
+                  onFocus="if(this.value==this.defaultValue)this.value='';"
+                  onBlur="if(this.value=='')this.value=this.defaultValue;"
+                />
+                <textarea
+                  class="input-text text-area"
+                  cols="0"
+                  rows="0"
+                  name="message"
+                  onFocus="if(this.value==this.defaultValue)this.value='';"
+                  onBlur="if(this.value=='')this.value=this.defaultValue;"
+                >
+Your Message *</textarea
+                >
+                <input class="input-btn" type="submit" value="send message" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <div class="footer_bottom">
+        <span
+          >Copyright © 2021, Template by
+          <a href="http://webthemez.com">Emad</a>.
+        </span>
+      </div>
+    </div>
+  </footer>
+  {% endblock content %} <br />
+</div>
