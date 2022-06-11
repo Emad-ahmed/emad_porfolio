@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from django.core.mail import send_mail
 from django.conf import settings
+from emadapp.models import Conatct
 # Create your views here.
 
 
@@ -14,10 +15,7 @@ class HomeView(View):
         email = request.POST.get('sender')
         message = request.POST.get('message')
 
-        content = f"Hello \nYour Registration Has Been Successfull.\nPay 500 For The Form Fee and Use This  Code As A Refernce Number Thanks For Registration.Use This Link For Pay http://127.0.0.1:8000/paymentLeading University, Sylhet"
-        send_mail("Successfully Registration",
-                  content,
-                  settings.EMAIL_HOST_USER,
-                  ["amadahmed1234678@gmail.com"]
-                  )
+        saveemail = Conatct(name=to_name, email=email, message=message)
+        saveemail.save()
+
         return render(request, "home.html")
