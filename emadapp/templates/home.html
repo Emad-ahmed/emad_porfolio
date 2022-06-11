@@ -11,6 +11,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="{% static 'css/card.css' %}" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
@@ -99,7 +100,7 @@
                 <li><a href="#Portfolio" class="scroll-link">Projects</a></li>
                 <li><a href="#clients" class="scroll-link">Experience</a></li>
                 <li><a href="#team" class="scroll-link">Testimonial</a></li>
-                <li><a href="#team" class="scroll-link">Blog</a></li>
+                <li><a href="#blog" class="scroll-link">Blog</a></li>
                 <li><a href="#contact" class="scroll-link">Contact</a></li>
               </ul>
             </div>
@@ -159,7 +160,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="service_icon delay-03s animated wow zoomIn">
-                <span><img src="{% static 'img/py.ico' %}" alt="" /></span>
+                <span><i class="fab fa-python"></i></span>
               </div>
               <div class="service_block">
                 <h3 class="animated fadeInUp wow">Python</h3>
@@ -666,7 +667,7 @@
       <!--/Title -->
     </div>
 
-    <div class="blog">
+    <div class="blog" id="blog">
       <div id="filters" class="sixteen columns">
         <ul class="clearfix">
           <li>
@@ -865,20 +866,21 @@
               </ul>
             </div>
             <div class="col-lg-8 wow fadeInLeft delay-06s">
-              <form action="javascript:sendmail()">
+              <form action="" method="POST">
+                {% csrf_token %}
                 <div class="form">
                   <input
                     class="input-text"
                     type="text"
-                    name="Name"
+                    name="name"
                     value="Your Name *"
                     onFocus="if(this.value==this.defaultValue)this.value='';"
                     onBlur="if(this.value=='')this.value=this.defaultValue;"
                   />
                   <input
                     class="input-text"
-                    type="text"
-                    name="Sender"
+                    type="email"
+                    name="sender"
                     value="Your E-mail *"
                     onFocus="if(this.value==this.defaultValue)this.value='';"
                     onBlur="if(this.value=='')this.value=this.defaultValue;"
@@ -887,7 +889,7 @@
                     class="input-text text-area"
                     cols="0"
                     rows="0"
-                    name="Message"
+                    name="message"
                     onFocus="if(this.value==this.defaultValue)this.value='';"
                     onBlur="if(this.value=='')this.value=this.defaultValue;"
                   >
