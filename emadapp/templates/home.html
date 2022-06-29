@@ -491,14 +491,11 @@
             {% for b in blog %}
             <div class="col-xs-12 col-sm-4">
               <div class="card">
-                <a class="img-card" href="{% url 'blog' b.id %}">
-                  <img src="{{b.blog_imaGE.url}}" alt="blog-image" />
-                </a>
                 <div class="card-content">
-                  <h4 class="card-title">
+                  <h4 class="card-title text-center">
                     <a href="{% url 'blog' b.id %}"> {{b.title}} </a>
                   </h4>
-                  <p class="">{{b.description|cutword}}</p>
+                  <p class="text-center">{{b.description|cutword}}</p>
                 </div>
                 <div class="card-read-more">
                   <a

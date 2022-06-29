@@ -5,7 +5,7 @@ from emadapp.models import Conatct, Blog
 
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ['title', 'description', 'blog_imaGE', 'dateblog']
+    list_display = ['title', 'description',  'dateblog']
 
 
 @admin.register(Conatct)

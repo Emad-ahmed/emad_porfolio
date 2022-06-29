@@ -6,4 +6,4 @@ register = template.Library()
 
 @register.filter(name='cutword')
 def cutword(description):
-    return description[:80]
+    return description[:200]
