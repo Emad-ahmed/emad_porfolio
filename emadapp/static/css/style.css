@@ -212,7 +212,7 @@ figure.effect-oscar:hover p {
     -webkit-transform: scale(1);
     transform: scale(1);
     color: #fff;
-    +++++++
+ 
 }
 
 figure.effect-oscar:hover figcaption {
@@ -405,7 +405,7 @@ p {
 .top_cont_outer {
     background: #ED5441;
     position: relative;
-    background: #CE1139;
+    background: #272541;
     height: 650px;
 }
 
@@ -510,7 +510,7 @@ a.read_more:hover {
 
 #service {
     padding: 60px 0px;
-    background: #CE1139;
+    background: #272541;
 }
 
 #service h2 {
@@ -608,7 +608,7 @@ a.read_more:hover {
 }
 
 .service-list-col1 i {
-    display: ;
+    
     color: #888;
     font-size: 19px;
     font-style: normal;
@@ -814,12 +814,12 @@ img {
 
 .team
 {
-    background: #CE1139;
+    background: #272541;
 }
 
 .blog
 {
-    background: #CE1139;
+    background: #544F96;
     padding: 4rem;
 }
 
@@ -828,7 +828,7 @@ img {
 ---------------------------------*/
 
 .client_logos {
-    background: #CE1139;
+    background: #544F96;
     padding: 60px 0;
     margin-top: 60px;
 }
@@ -925,7 +925,7 @@ img {
     position: absolute;
     font-family: FontAwesome;
     font-size: 1.125em;
-    color: #CE1139;
+    color: #272541;
     left: 0px;
     top: 3px;
 }
