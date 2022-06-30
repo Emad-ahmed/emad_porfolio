@@ -1955,6 +1955,7 @@ div.mc-image {
     .detailsmyself
     {
         text-align: center;
+        margin-top: -100px
     }
     .aboutUs-container {
         background-image: none;
@@ -2076,6 +2077,7 @@ div.mc-image {
     .detailsmyself
     {
         text-align: center;
+        margin-top: -100px
     }
     .myhello
     {
