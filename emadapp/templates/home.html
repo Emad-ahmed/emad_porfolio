@@ -5,7 +5,11 @@
 {% block content %} <br />
 {% load static %}
 <!--Header_section-->
-
+{% if messages %} {% for message in messages %}
+<p {% if message.tags %} class="alert alert-{{message.tags}}" {% endif %}>
+  {{message}}
+</p>
+{% endfor %} {% endif %}
 <section id="aboutUs">
   <!--Aboutus-->
   <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
@@ -16,16 +20,14 @@
         <div class="row">
           <div class="col-lg-12 about-us">
             <div class="row">
-              <div class="col-md-6">
-                <img class="img-responsive" src="img/about1.jpg" align="" />
-              </div>
               <!-- /.col-md-6 -->
-              <div class="col-md-6 detailsmyself m-auto">
-                <h3>I Am A Web Developer</h3>
+              <div class="col-md-6 detailsmyself">
+                <h4 style="color: black" class="myhello">Hello world,</h4>
+                <h1 style="color: black; font-weight: bold">I'm Emad Ahmed</h1>
                 <p>
-                  I,m Emad Ahmed. I am a student of leading university in CSE
-                  department. I have been involved in web for about 3 years. I
-                  am basically a django developer.
+                  I'm a web developer. I am a student of leading university in
+                  CSE department. I have been involved in web for about 3 years.
+                  I am basically a django developer.
                 </p>
 
                 <ul class="about-us-list">
@@ -38,8 +40,16 @@
                 </ul>
                 <!-- /.about-us-list -->
               </div>
+              <div class="col-md-6">
+                <img
+                  class="img-responsive"
+                  src="{% static 'img/hireme.png' %}"
+                  align="center"
+                />
+              </div>
               <!-- /.col-md-6 -->
             </div>
+
             <!-- /.row -->
           </div>
           <!-- /.col-lg-12 -->
@@ -396,7 +406,7 @@
   <!--main-section team-start-->
   <div class="container">
     <h2>Testimonial</h2>
-    <h6>Here is What My Clients Saying About Us</h6>
+    <h6>Here is What My Clients Saying About Me</h6>
 
     <div id="team" name="team">
       <div class="container">

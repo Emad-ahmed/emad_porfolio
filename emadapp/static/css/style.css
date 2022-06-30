@@ -919,6 +919,7 @@ img {
 }
 
 
+
 /* Team
 ---------------------------------*/
 
@@ -1919,7 +1920,10 @@ div.mc-image {
     padding: 0;
 }
 
-
+.myhello
+{
+    margin-top: 70px;
+}
 /*
    Media Queries
 --------------------------- */
@@ -1931,12 +1935,21 @@ div.mc-image {
         background-size: auto 59%;
         background-position-y: 150px;
     }
+
 }
 
 @media (max-width: 768px) {
     .navStyle {
         float: right;
         width: auto;
+        text-align: center;
+    }
+    .myhello
+    {
+        margin-top: 1px;
+    }
+    
+    .centered {
         text-align: center;
     }
     .detailsmyself
@@ -1992,7 +2005,7 @@ div.mc-image {
     .page_section.team {
         padding: 40px 0;
     }
-    ,
+    
     #clients {
         padding: 40px 0;
     }
@@ -2064,6 +2077,13 @@ div.mc-image {
     {
         text-align: center;
     }
+    .myhello
+    {
+        margin-top: 1px;
+    }
+    .centered {
+        text-align: center;
+    }
     .navbar {
         border: 0px solid #fff;
         min-height: 40px;
@@ -2101,7 +2121,16 @@ img.img.img-circle.lt-box {
 
 .downloadcv
 {
-    background: #CE1139;
+    background: #FF6B00;
     color: white;
     margin-top: 2rem;
+    
+    padding: 1rem;
+    padding-top: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
+
+
+   
