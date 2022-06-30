@@ -47,6 +47,11 @@
 
   <body>
     <!--Hero_Section-->
+    {% if messages %} {% for message in messages %}
+    <p {% if message.tags %} class="alert alert-{{message.tags}}" {% endif %}>
+      {{message}}
+    </p>
+    {% endfor %} {% endif %}
     <section id="hero_section" class="top_cont_outer">
       <div class="hero_wrapper">
         <div class="container">
@@ -71,6 +76,7 @@
     <!--Hero_Section-->
 
     <!--Header_section-->
+
     <header id="header_wrapper">
       <div class="container">
         <div class="header_box">

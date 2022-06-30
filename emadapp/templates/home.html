@@ -5,16 +5,7 @@
 {% block content %} <br />
 {% load static %}
 <!--Header_section-->
-{% if messages %} {% for message in messages %}
-<p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>
-  {{message}}
-</p>
-{% endfor %} {% endif %} {% csrf_token %} {% for fm in form %}
-<div class="form-group mb-3">
-  {{fm.label_tag}} {{fm}}
-  <small class="text-danger"> {{fm.errors|striptags}} </small>
-</div>
-{% endfor %}
+
 <section id="aboutUs">
   <!--Aboutus-->
   <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
@@ -524,6 +515,7 @@
           <h2>Get In Touch</h2>
           <h6>You Can Contact me Anytime</h6>
         </div>
+
         <div class="row">
           <div class="col-lg-4 wow fadeInLeft">
             <div class="contact_info">
